@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context="com.example.jant.camera.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"/>
+
+
+    <ImageView
+        android:id="@+id/original_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/change_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </ImageView>
+
+    <com.example.jant.camera.MyView
+        android:id="@+id/change_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.example.jant.camera.MyView>
+
+    <!--<FrameLayout-->
+    <!--android:id="@+id/preview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+
+    <!--android:layout_centerHorizontal="true"-->
+    <!--&gt;-->
+
+
+    <!--<com.example.jant.camera.CameraView-->
+    <!--android:id="@+id/cameraView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+
+    <!--</FrameLayout>-->
+
+
+</LinearLayout>
