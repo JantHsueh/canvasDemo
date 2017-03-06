@@ -1,52 +1,71 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/activity_main"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                tools:context="com.example.jant.camera.MainActivity">
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              tools:context=".MainActivity" >
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        android:orientation="horizontal" >
 
+        <Button
+            android:id="@+id/btn_scale"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="缩放" />
 
+        <Button
+            android:id="@+id/btn_rotate"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="旋转" />
+
+        <Button
+            android:id="@+id/btn_translate"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="平移" />
+
+        <Button
+            android:id="@+id/btn_skew"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="倾斜" />
+
+        <Button
+            android:id="@+id/btn_x_mirror"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="X轴镜像" />
+
+        <Button
+            android:id="@+id/btn_y_mirror"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Y轴镜像" />
+
+    </LinearLayout>
+    <!-- 原始图片 -->
     <ImageView
-        android:id="@+id/original_picture"
+        android:id="@+id/iv_base"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-    </ImageView>
-
+        android:layout_height="wrap_content" />
+    <!-- 处理之后的图片 -->
     <ImageView
-        android:id="@+id/change_picture"
+        android:id="@+id/iv_after"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-    </ImageView>
-
-    <com.example.jant.camera.MyView
-        android:id="@+id/change_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-    </com.example.jant.camera.MyView>
-
-    <!--<FrameLayout-->
-    <!--android:id="@+id/preview"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent"-->
-
-    <!--android:layout_centerHorizontal="true"-->
-    <!--&gt;-->
-
-
-    <!--<com.example.jant.camera.CameraView-->
-    <!--android:id="@+id/cameraView"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent" />-->
-
-
-    <!--</FrameLayout>-->
-
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
