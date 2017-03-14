@@ -1,7 +1,8 @@
-package com.example.jant.camera;
+package com.example.jant.canvas;
 
 /**
  * Created by Jant on 2017/2/15.
+ * 这个是一些排序的算法
  */
 
 public class JavaClass {

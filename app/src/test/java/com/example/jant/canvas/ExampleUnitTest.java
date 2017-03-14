@@ -1,4 +1,4 @@
-package com.example.jant.camera;
+package com.example.jant.canvas;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.example.jant.camera;
+package com.example.jant.canvas;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
